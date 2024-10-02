@@ -55,7 +55,37 @@ public class Main {
       // not including the char at the second int index
       String firstWord = message.substring(0,4);
       System.out.println("First Word: " + firstWord);
-      
+
+      // .substring(int) returns a String from first index to end of string
+      String lastWord = message.substring(8);
+      System.out.println("Last Word: " + lastWord);
+
+      // .indexOf(String) returns an int representing the index
+      // or position of the String argument passed in
+      int indexOfAwesome = message.indexOf("awesome");
+      System.out.println("Character 'awesome' Starts At: " + indexOfAwesome);
+
+      // not on AP exam but useful!
+      System.out.println(message.toUpperCase());
+      System.out.println(message.toLowerCase());
+
+      // .equals compares a parameter String to the calling String object
+      // then returns a boolean representing whether they are EQUAL
+      String s1 = "I am tired.";
+      String s2 = "It is almost the weekend!";
+
+      boolean isEqual = s1.equals(s2);
+      System.out.println("Are s1 and s2 Equal?: " + isEqual);
+      boolean isEqualAgain = s1.equals("I am tired.");
+      System.out.println("Is s1 the same as 'I am tired.'?: " + isEqualAgain);
+
+      String a = "ape";
+      String z = "zebra";
+
+      // .compareTo returns a positive integer if this string > other string
+      // returns a negative integer if this string is < other string
+      System.out.println(a.compareTo(z)); // -25
+      System.out.println(z.compareTo(a)); // 25
 
    }
 }
